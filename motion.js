@@ -17,24 +17,24 @@ exports.velocity = function(d,t){
   return v;
 };
 
-exports.velocity2 = function(){
+exports.velocity2 = function(d,a,t){
   let v = 0;
   v += (d-0.5*a*t*t)/t;
   return v;
 };
 
-exports.time = function(){
+exports.time = function(d,v){
   let t = 0;
   t += d/v;
   return t;
 };
 
-exports.time2 = function(){
-  let t = (vf-vi)/2;
+exports.time2 = function(vf,vi,a){
+  let t = (vf-vi)/a;
   return t;
 };
 
-exports.acceleration = function(v,t){
-  let a =
+exports.acceleration = function(d,v,t){
+  let a = (vf-vi)/t;
   return a;
 };
