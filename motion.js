@@ -29,8 +29,8 @@ exports.time = function(d,v){
   return t;
 };
 
-exports.time2 = function(vf,vi,a){
-  let t = (vf-vi)/a;
+exports.time2 = function(d,v,a){
+  let t = ;
   return t;
 };
 
