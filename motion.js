@@ -29,12 +29,14 @@ exports.time = function(d,v){
   return t;
 };
 
-exports.time2 = function(d,v,a){
-  let t = ;
+exports.time2 = function(){
+  let t = 0;
   return t;
 };
 
 exports.acceleration = function(d,v,t){
-  let a = (vf-vi)/t;
+  let a = 0;
+  a += 2*d;
+  a = a/(t*t*v*t);
   return a;
 };
