@@ -29,10 +29,16 @@ exports.time = function(d,v){
   return t;
 };
 
-exports.time2 = function(vf,vi,a){
-  let t = 0;
-  t += vf - vi;
-  t = t/a;
+exports.time2 = function(d,v,a){
+  let t = v*v + 2*a*d;
+  t = let t1 = v*v + 2*a*d;
+  t1 = Math.sqrt(t1);
+  t1 = 0-v+t1;
+  t1 = t1/a;
+  let t2 = v*v + 2*a*d;
+  t2 = Math.sqrt(t2);
+  t2 = 0-v-t2;
+  t2 = t2/a;
   return t;
 };
 
